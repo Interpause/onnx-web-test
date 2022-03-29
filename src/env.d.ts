@@ -23,3 +23,10 @@ declare module 'react' {
     tw?: string
   }
 }
+
+// https://github.com/microsoft/onnxruntime-web-demo/issues/15
+// workaround: use external script version & include types into global namespace
+import 'onnxruntime-web'
+declare global {
+  export * as ort from 'onnxruntime-web'
+}
