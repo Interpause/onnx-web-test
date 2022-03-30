@@ -1,7 +1,7 @@
 import { useEffect, useRef } from 'react'
 import 'twin.macro'
 
-import modelURL from './assets/yolov5n6.onnx?url'
+import modelURL from './assets/yolov2-tiny.onnx?url'
 
 async function getCam() {
   // https://stackoverflow.com/a/56095482
@@ -62,6 +62,7 @@ function startLoop(canvas: HTMLCanvasElement) {
 
     //https://onnxruntime.ai/docs/api/js/interfaces/InferenceSession.SessionOptions.html
     const session = await ort.InferenceSession.create(modelURL, {
+      //executionProviders: ['wasm'],
       executionProviders: ['webgl'],
       //executionMode: 'parallel',
       //graphOptimizationLevel: 'all',
@@ -87,7 +88,7 @@ function startLoop(canvas: HTMLCanvasElement) {
 
       // use https://netron.app/ to inspect model input/output
       console.time('forward')
-      const inputs = { images: tensor }
+      const inputs = { image: tensor }
       const outputs = await session.run(inputs)
       console.timeEnd('forward')
 
@@ -131,8 +132,8 @@ export default function CocoPreview() {
     <canvas
       tw='fixed h-[640px] w-[640px] top-10 inset-x-0 mx-auto'
       ref={canvasRef}
-      width={640}
-      height={640}
+      width={416}
+      height={416}
     ></canvas>
   )
 }
