@@ -37,6 +37,8 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["@emotion/babel-plugin", "virtual:1c54d4ec8213f262794efaec7e22ef0e065b1967e8b12d6cd0082721eb73b5b05b3c41357e5252f2a2da40352cfbd62f677f962bdd84a396bb51c9822ab69d7b#npm:11.7.2"],\
             ["@emotion/react", "virtual:1c54d4ec8213f262794efaec7e22ef0e065b1967e8b12d6cd0082721eb73b5b05b3c41357e5252f2a2da40352cfbd62f677f962bdd84a396bb51c9822ab69d7b#npm:11.8.2"],\
             ["@emotion/styled", "virtual:1c54d4ec8213f262794efaec7e22ef0e065b1967e8b12d6cd0082721eb73b5b05b3c41357e5252f2a2da40352cfbd62f677f962bdd84a396bb51c9822ab69d7b#npm:11.8.1"],\
+            ["@types/ndarray", "npm:1.0.11"],\
+            ["@types/numjs", "npm:0.16.1"],\
             ["@types/react", "npm:17.0.43"],\
             ["@types/react-dom", "npm:17.0.14"],\
             ["@vitejs/plugin-react", "npm:1.2.0"],\
@@ -969,6 +971,15 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "linkType": "HARD"\
         }]\
       ]],\
+      ["@types/ndarray", [\
+        ["npm:1.0.11", {\
+          "packageLocation": "./.yarn/cache/@types-ndarray-npm-1.0.11-0bb4af065a-b2f379d18d.zip/node_modules/@types/ndarray/",\
+          "packageDependencies": [\
+            ["@types/ndarray", "npm:1.0.11"]\
+          ],\
+          "linkType": "HARD"\
+        }]\
+      ]],\
       ["@types/node", [\
         ["npm:13.13.52", {\
           "packageLocation": "./.yarn/cache/@types-node-npm-13.13.52-95159539bb-8f1afff497.zip/node_modules/@types/node/",\
@@ -981,6 +992,16 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageLocation": "./.yarn/cache/@types-node-npm-17.0.23-167849e796-a351755473.zip/node_modules/@types/node/",\
           "packageDependencies": [\
             ["@types/node", "npm:17.0.23"]\
+          ],\
+          "linkType": "HARD"\
+        }]\
+      ]],\
+      ["@types/numjs", [\
+        ["npm:0.16.1", {\
+          "packageLocation": "./.yarn/cache/@types-numjs-npm-0.16.1-4e04bc1ac5-ca5605e58e.zip/node_modules/@types/numjs/",\
+          "packageDependencies": [\
+            ["@types/numjs", "npm:0.16.1"],\
+            ["@types/ndarray", "npm:1.0.11"]\
           ],\
           "linkType": "HARD"\
         }]\
@@ -3607,6 +3628,8 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["@emotion/babel-plugin", "virtual:1c54d4ec8213f262794efaec7e22ef0e065b1967e8b12d6cd0082721eb73b5b05b3c41357e5252f2a2da40352cfbd62f677f962bdd84a396bb51c9822ab69d7b#npm:11.7.2"],\
             ["@emotion/react", "virtual:1c54d4ec8213f262794efaec7e22ef0e065b1967e8b12d6cd0082721eb73b5b05b3c41357e5252f2a2da40352cfbd62f677f962bdd84a396bb51c9822ab69d7b#npm:11.8.2"],\
             ["@emotion/styled", "virtual:1c54d4ec8213f262794efaec7e22ef0e065b1967e8b12d6cd0082721eb73b5b05b3c41357e5252f2a2da40352cfbd62f677f962bdd84a396bb51c9822ab69d7b#npm:11.8.1"],\
+            ["@types/ndarray", "npm:1.0.11"],\
+            ["@types/numjs", "npm:0.16.1"],\
             ["@types/react", "npm:17.0.43"],\
             ["@types/react-dom", "npm:17.0.14"],\
             ["@vitejs/plugin-react", "npm:1.2.0"],\

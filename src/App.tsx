@@ -3,6 +3,7 @@ import tw, { css, styled } from 'twin.macro'
 
 import logo from './assets/logo.svg'
 import './assets/App.css'
+import CocoPreview from './Coco'
 
 /* twin.macro styled component */
 const RedText = tw.p`text-red-400`
@@ -61,6 +62,7 @@ function App() {
           </a>
         </p>
       </header>
+      <CocoPreview />
     </div>
   )
 }

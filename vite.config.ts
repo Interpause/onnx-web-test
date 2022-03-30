@@ -12,6 +12,9 @@ export default defineConfig({
       },
     }),
   ],
+  optimizeDeps: {
+    exclude: ['@d4c/numjs', 'onnxruntime-web'],
+  },
   build: {
     rollupOptions: {
       external: ['onnxruntime-web'],

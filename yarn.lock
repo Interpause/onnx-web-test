@@ -720,6 +720,13 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@types/ndarray@npm:*, @types/ndarray@npm:^1.0.11":
+  version: 1.0.11
+  resolution: "@types/ndarray@npm:1.0.11"
+  checksum: b2f379d18da9f53ba776476be3f566ef55f06578db65e110b6b4590cd9915c5992129afca0a334571666079f881c92ad475f05b8e012afda31071a1d7a1ccd00
+  languageName: node
+  linkType: hard
+
 "@types/node@npm:*, @types/node@npm:>=13.7.0":
   version: 17.0.23
   resolution: "@types/node@npm:17.0.23"
@@ -731,6 +738,15 @@ __metadata:
   version: 13.13.52
   resolution: "@types/node@npm:13.13.52"
   checksum: 8f1afff497ebeba209e2dc340d823284e087a47632afe99a7daa30eaff80893e520f222ad400cd1f2d3b8288e93cf3eaded52a8e64eaefb8aacfe6c35de98f42
+  languageName: node
+  linkType: hard
+
+"@types/numjs@npm:^0.16.1":
+  version: 0.16.1
+  resolution: "@types/numjs@npm:0.16.1"
+  dependencies:
+    "@types/ndarray": "*"
+  checksum: ca5605e58e76fb057cfe96b63c1cc904a9e27ef0c92a6b7018b014592439f1ea996b34a407e103496ed3f313f1989282e2ab5178b71c0414324187a447169e0c
   languageName: node
   linkType: hard
 
@@ -3068,6 +3084,8 @@ __metadata:
     "@emotion/babel-plugin": ^11.7.2
     "@emotion/react": ^11.8.2
     "@emotion/styled": ^11.8.1
+    "@types/ndarray": ^1.0.11
+    "@types/numjs": ^0.16.1
     "@types/react": ^17.0.33
     "@types/react-dom": ^17.0.10
     "@vitejs/plugin-react": ^1.0.7

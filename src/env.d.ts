@@ -24,9 +24,20 @@ declare module 'react' {
   }
 }
 
+// https://github.com/DefinitelyTyped/DefinitelyTyped/discussions/59537
+import 'numjs'
+import { NdArray as BaseNdArray } from 'ndarray'
+declare module 'numjs' {
+  interface NdArray<T = number> extends BaseNdArray<Data<T>> {
+    slice(...args: Array<number | null | (number | null)[]>): NdArray<T>
+    selection: BaseNdArray
+  }
+}
+
 // https://github.com/microsoft/onnxruntime-web-demo/issues/15
 // workaround: use external script version & include types into global namespace
 import 'onnxruntime-web'
 declare global {
   export * as ort from 'onnxruntime-web'
+  export * as nj from 'numjs'
 }
