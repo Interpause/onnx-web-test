@@ -2,6 +2,10 @@
 
 Testing onnx web runtime edge deployment
 
+## Archived
+
+If onnx web matures, unarchive this and make it into a template or smth.
+
 ## Stupid
 
 When faced with subpar maintenance, one might have to resort to extremes...
